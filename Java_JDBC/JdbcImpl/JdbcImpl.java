@@ -24,11 +24,11 @@ public class JdbcImpl {
         try {
 
              // Inserrt Query
-//
-//            System.out.println("Inserting data into the students table...");
-//            ps = connection.prepareStatement(insertSql);
-//            int rows = ps.executeUpdate();
-//            System.out.println(rows + " affected");
+
+            System.out.println("Inserting data into the students table...");
+            ps = connection.prepareStatement(insertSql);
+            int rows = ps.executeUpdate();
+            System.out.println(rows + " affected");
 
 
 

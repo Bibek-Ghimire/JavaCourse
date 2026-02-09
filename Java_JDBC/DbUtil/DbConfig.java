@@ -23,7 +23,17 @@ public class DbConfig {
 
     public static synchronized DbConfig getInstance() {
         if (instance == null) {
+
+            // Synchonization for thread safety
+
+//            synchronized (DbConfig.class){
+//                instance = new DbConfig();
+//            }
+
+            // this is not theread safe
             instance = new DbConfig();
+
+
         }
         return instance;
     }
